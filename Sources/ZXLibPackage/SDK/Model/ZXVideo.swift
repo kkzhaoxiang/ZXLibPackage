@@ -7,8 +7,9 @@
 //
 
 import Foundation
+import HandyJSON
 
-public struct ZXVideo {
+public struct ZXVideo: HandyJSON {
     
     var url: String?
     var videoId: String?

@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 public class ZXPluginVideoView: UIView {
 
     lazy var plugins: NSMapTable<NSString, ZXVideoPlugin> = {
