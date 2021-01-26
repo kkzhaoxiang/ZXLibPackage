@@ -12,12 +12,6 @@ class VideoPlayerViewController: UIViewController {
     
     var video: ZXVideo
     
-    init() {
-        video = ZXVideo()
-        video.url = "www.baidu.com"
-        video.videoId = "111"
-    }
-    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -29,6 +23,11 @@ class VideoPlayerViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        video = ZXVideo()
+
+        video.url = "www.baidu.com"
+        video.videoId = "111"
         
         if let d = video.toJSONString() {
             print(d)

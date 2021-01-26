@@ -9,7 +9,7 @@
 import Foundation
 import HandyJSON
 
-public struct ZXVideo: HandyJSON {
+struct ZXVideo: HandyJSON {
     
     var url: String?
     var videoId: String?
